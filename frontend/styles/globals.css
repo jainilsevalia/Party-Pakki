@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Jakarta", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hr-with-words {
+  display: flex;
+}
+.hr-with-words::before,
+.hr-with-words::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.hr-with-words:before {
+  margin-right: 10px;
+}
+.hr-with-words:after {
+  margin-left: 10px;
+}
+
+.fullscreen-modal .modal-box {
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+/* Venue card carousel container div  */
+.bghjHX {
+  margin: 0 !important;
+}
+.kNBmiK {
+  margin: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  .bqyzQp {
+    padding: 10px 0 3px 0;
+    background-color: #edf2f7;
+  }
+}
+
+/* otp input field  */
+.vi__wrapper {
+  width: 100%;
+}
+
+/* datepicker  */
+.dob {
+  z-index: 10 !important;
+}
+
+.booking-date {
+  z-index: 9999 !important;
+}
+
+/* popup  */
+.modal {
+  pointer-events: none;
+}
+.modal-box {
+  pointer-events: auto;
+}
+
+/* phone input  */
+
+/* loader  */
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+  margin: 0 15px;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%,
+  100% {
+    background-color: #ebe6ff;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .open-upwards-mobile.country-list {
+    bottom: 50px;
+  }
+}

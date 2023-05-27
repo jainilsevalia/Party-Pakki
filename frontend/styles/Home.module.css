@@ -1,0 +1,21 @@
+.banner-container {
+  height: 500px;
+}
+.banner {
+  object-fit: cover;
+  opacity: 0.5;
+}
+.center-item {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 576px) {
+  .banner-container {
+    height: 350px;
+  }
+  .center-item {
+    min-width: 300px;
+  }
+}

@@ -1,0 +1,23 @@
+.venue-images {
+  height: 300px;
+}
+
+.venue-images img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.masonry {
+  display: flex;
+  width: auto;
+}
+.masonryColumn {
+  background-clip: padding-box;
+}
+
+@media screen and (min-width: 768px) {
+  .venue-images {
+    height: 400px;
+  }
+}
